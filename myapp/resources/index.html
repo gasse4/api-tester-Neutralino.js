@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>API Tester</title>
+<style>
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+input, select{
+    padding:5px;
+}
+
+textarea{
+    width:100%;
+    height:250px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>API Tester</h2>
+
+<select id="method">
+<option>GET</option>
+<option>POST</option>
+<option>DELETE</option>
+</select>
+
+<input id="url" size="60" placeholder="https://api.example.com">
+
+<button onclick="sendRequest()">Send</button>
+
+<h3>Body (POST)</h3>
+<textarea id="body"></textarea>
+
+<h3>Response</h3>
+<textarea id="response"></textarea>
+<div id="status"></div>
+
+<button onclick="save()">Save</button>
+<script src="js/neutralino.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
